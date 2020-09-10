@@ -1,15 +1,18 @@
 body{
-    background: red;
+    /* background: red; */
     padding: 0;
     margin: 0;
     height: 200vh;
 }
 header{
     position: relative;
-    background: linear-gradient(rgba(156, 132, 100, 0.5), rgba(156, 179, 200, 0.4)), url(/images/slide01.jpg) ;
+    /* background: linear-gradient(rgba(115, 151, 70, 0.8), rgba(156, 179, 200, 0.4)), url(/images/slide01.jpg) ; */
+    background-image: url(/images/slide01.jpg) ;
     height: 90vh;
     padding: 0;
     margin: 0;
+    /* background: rgb(0, 0, 0); */
+    opacity: 100%;
 }
 head{
     display: grid;
@@ -31,10 +34,29 @@ head{
     position: absolute;
     top: 20px;
     right: 20px;
+    color: #fff;
 }
 .headH1{
     padding: 20px;
     margin: 0;
-    color: #212b2b;
     cursor: pointer;
+    transition: all 0.4s ease-in-out 0.2s;
+
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.84);
+}
+.headH1:hover > .headColor{
+    color: #fff;
+    font-size: 20px;
+}
+/* ----------------------------------------------------------- */
+.bigText{
+font-size: 7rem;
+/* position: absolute;
+right: 30px; */
+color: #fff;
+font-family: "poppins";
+text-align: center;
+font-weight: 300;
 }
