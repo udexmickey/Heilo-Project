@@ -1,3 +1,40 @@
 body{
     background: red;
+    padding: 0;
+    margin: 0;
+    height: 200vh;
+}
+header{
+    position: relative;
+    background: linear-gradient(rgba(156, 132, 100, 0.5), rgba(156, 179, 200, 0.4)), url(/images/slide01.jpg) ;
+    height: 90vh;
+    padding: 0;
+    margin: 0;
+}
+head{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    /* position: relative; */
+    background-color: transparent;
+    /* position: sticky; */
+    /* top: 50px; */
+}
+.classMenu{
+    width: 20rem;
+    background-color: #fff;
+    font-size: large;
+    cursor: pointer;
+}
+.slipt{
+    float: right;
+    margin-right: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.headH1{
+    padding: 20px;
+    margin: 0;
+    color: #212b2b;
+    cursor: pointer;
 }
