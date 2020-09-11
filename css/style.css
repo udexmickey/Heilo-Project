@@ -84,7 +84,6 @@ head{
 }
 .headH1:hover > .headColor{
     color: #b8b3b3;
-    font-size: 20px;
 }
 /* ----------------------------------------------------------- */
 .bigText{
