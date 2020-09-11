@@ -6,11 +6,12 @@ body{
 }
 header{
     position: relative;
-    /* background: linear-gradient(rgba(115, 151, 70, 0.8), rgba(156, 179, 200, 0.4)), url(/images/slide01.jpg) ; */
-    background-image: url(/images/slide01.jpg) ;
-    height: 90vh;
+    background: linear-gradient(rgba(37, 37, 37, 0.8), rgba(12, 13, 14, 0.4)), url(/images/slide01.jpg) ;
+    /* background-image: url(/images/slide01.jpg) ; */
+    height: 80vh;
     padding: 0;
     margin: 0;
+    background-attachment: fixed;
     /* background: rgb(0, 0, 0); */
     opacity: 100%;
 }
@@ -21,30 +22,56 @@ head{
     background-color: transparent;
     /* position: sticky; */
     /* top: 50px; */
+    border-bottom: solid 1px #666;
+     
 }
 .classMenu{
-    width: 20rem;
-    background-color: #fff;
-    font-size: large;
     cursor: pointer;
+    height: 1px;
+    border: none;
+    /* margin: 5px; */
+    display: inline-block;
+    width: 15px;
+    padding: 0;
+    background-color: #fff;
 }
+.classMenu::after{
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.classMenu::before{
+    content: '';
+    height: 1px;   
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 15px;
+    width: 100%;
+    background-color: #fff;
+}
+
 .slipt{
-    float: right;
-    margin-right: auto;
     position: absolute;
     top: 20px;
     right: 20px;
     color: #fff;
+    
 }
 .headH1{
+    font-family: 'poppins';
     padding: 20px;
     margin: 0;
     cursor: pointer;
     transition: all 0.4s ease-in-out 0.2s;
-
+display: inline-block;
     font-weight: 400;
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.84);
+    color: rgba(187, 184, 184, 0.84);
 }
 .headH1:hover > .headColor{
     color: #fff;
@@ -53,10 +80,41 @@ head{
 /* ----------------------------------------------------------- */
 .bigText{
 font-size: 7rem;
-/* position: absolute;
-right: 30px; */
 color: #fff;
-font-family: "poppins";
+font-family: 'poppins', Poppins , sans-serif;
 text-align: center;
 font-weight: 300;
+margin: 30px auto auto;
+/* width: 50%; */
 }
+hr{
+    width: 23%; 
+}
+h3{
+font-size: .9rem;
+color: #fff;
+font-family: 'poppins', Poppins , sans-serif;
+text-align: center;
+font-weight: 100;
+margin: 80px auto 30px;
+line-height: 1.2;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #999;
+}
+
+.spanH3{
+    color: #fff;
+}
+/* .fixedMenu{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+}
+.fixedMenu li{
+    list-style: none;
+    color: #dcdcdc;
+    padding: 5px;
+    border-bottom: solid #666 1px;
+} */
